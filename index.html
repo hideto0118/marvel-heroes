@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marvel</title>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="top-title">Marvel Heroes</h1>
+      <p class="sub-title">Who's your hero?</p>
+    </header>
+    <main>
+      <section class="jumbotron">
+        <ul id="heroes" class="heroes">
+          <div class="page left-page">
+          <li class="hero-in-comic hero1"><div class="hero1-img"></div><span class="comic-title-hero1">Spider-Man</span></li>
+          <div class="hero2-frame">
+            <li class="hero-in-comic hero2"><div class="hero2-img"></div><span class="comic-title-bottom">Iron Man</span></li>
+          </div>
+          <div class="hero3-frame">
+            <li class="hero-in-comic hero3"><div class="hero3-img"></div><span class="comic-title-bottom">Venom<span class="display-none"> (FLASH THOMPSON)</span></span></li>
+          </div>
+            <div class="left-page-bottom">
+              <li class="hero-in-comic hero4"><div class="hero4-img"></div><span class="comic-title-bottom">Black Widow</span></li>
+              <li class="hero-in-comic hero5"><div class="hero5-img"></div><span class="comic-title-bottom">Deadpool</span></li>
+            </div>
+          </div>
+          <div class="page right-page">
+            <div class="right-page-top">
+              <li class="hero-in-comic hero6"><div class="hero6-img"></div><span class="comic-title-top">Hulk</span></li>
+              <li class="hero-in-comic hero7"><div class="hero7-img"></div><span class="comic-title-top">Thor</span></li>
+              <li class="hero-in-comic hero8"><div class="hero8-img"></div><span class="comic-title-top">Wolverine</span></li>
+            </div>
+            <div class="hero9-frame">
+              <li class="hero-in-comic hero9"><div class="hero9-img"></div><span class="comic-title-bottom hero-title-zindex">Doctor Strange</span></li>
+            </div>
+            <li class="hero-in-comic hero10"><div class="no-hover"></div><div class="hero10-img"></div><span class="comic-title-bottom comic-title-bottom-hero10">Captain America</span>
+            </li>
+          </div>
+        </ul>
+      </section>
+
+      <section id="search-results" class="seach-results">
+        <div id="chosen-hero">
+        <div class="chosen-hero-top">
+          <div id="hero-img-wrapper" class="chosen-hero-top-left">
+          </div>
+          <div class="chosen-hero-top-right">
+            <h2 id="hero-name" class="hero-name"></h2>
+            <p id="hero-description" class="hero-description"></p>
+          </div>
+        </div>
+          <h3 id="comics-h3"></h3>
+          <ul id="comic-list" class="comic-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small><a href="http://protein-or-die.sakura.ne.jp/Mainpage/indexEn.html" target="_blank">Created by Yas</a></small>
+      <small><a href="https://marvel.com/" target='_blank' >Data provided by Marvel. © 2014 Marvel</a></small>
+    </footer>
+  </div><!-- wrapper -->
+  <div class="modal"></div>
+
+  <script type="text/javascript" src="http://cryptojs.altervista.org/api/functions_cryptography.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,799 @@
+/**************
+Fonts
+***************/
+ @font-face { font-family: American Captain; src: url('American Captain.otf'); }
+ @font-face { font-family: American Captain; font-weight: bold; src: url('American Captain.otf');}
+
+/****************
+Universal
+******************/
+body {
+  text-align: center;
+  color: #a50021;
+  background-color: #000;
+  font-family: 'Merriweather', serif;
+}
+
+h1,
+h2,
+h3,
+small {
+  font-family: 'American Captain', serif;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+small {
+  display: block;
+}
+
+/*************
+Body
+**************/
+.top-title {
+  color: #fff;
+  padding: 12px 5px 0 3px;
+  background-color: #ed1a29;
+  font-size: 3.5rem;
+  display: inline-block;
+  line-height: 75%;
+  letter-spacing: -2px;
+  word-spacing: 5px;
+  vertical-align: bottom;
+  margin: 1rem;
+}
+
+.sub-title{
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  height: 80vh;
+  background-color: #fff;
+}
+
+.heroes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+}
+
+.page {
+  width: 49%;
+  height: 97%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.left-page {
+  margin-right: 2px;
+}
+
+.right-page {
+  border: 1px solid #000;
+  margin-left: 2px;
+}
+
+.hero-in-comic {
+  font-size: 1.5rem;
+/*  display: inline-block;*/
+  border: 1px solid #000;
+  position: absolute;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 2px 2px rgba(0,0,0, 0.7);
+  transition: filter .3s ease-out;
+}
+
+.gray-scale{
+  filter: grayscale(100%);
+}
+
+.hero-in-comic:hover {
+  filter: grayscale(0%);
+}
+
+.comic-title-top {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.comic-title-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.comic-title-hero1 {
+  display: block;
+  position: absolute;
+  left: 1%;
+  top: 1%;
+}
+
+.hero1 {
+  box-sizing: border-box;
+  height: 52%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.hero1-img {
+  width: 100%;
+  height: 100%;
+  background: url("../img/spider-man4-3.jpg");
+  background-position: 20% 20%;
+  background-size: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.hero1-img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.hero2-frame {
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  right: 0%;
+  top: 0px;
+  z-index: 50;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.hero2 {
+  box-sizing: border-box;
+  height: 99%;
+  width: 97%;
+  right: -1px;
+  top: -1px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.hero2-img {
+/*  z-index: 100;*/
+  height: 100%;
+  width: 100%;
+  background: url("../img/iron-man2-2.jpg") center;
+  background-size: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.hero2-img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.hero3-frame {
+  font-size: 1.2rem;
+  position: absolute;
+  height: 20%;
+  width: 50%;
+  top: 35%;
+  left: 20%;
+  z-index: 50;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.display-none {
+  display: none;
+}
+
+.hero3 {
+  height: 96%;
+  width: 98%;
+  top: 2%;
+  left: 1%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.hero3-img {
+  background: url("../img/venom2-2.jpg") center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.hero3-img:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.left-page-bottom {
+  position: absolute;
+  height: 48%;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.hero4 {
+  box-sizing: border-box;
+  height:99%;
+  width: 49.5%;
+  top: 1%;
+  left: 0%;
+  overflow: hidden;
+}
+
+.hero4-img {
+  height: 100%;
+  width: 100%;
+  background: url("../img/black-widow-2.jpg") center;
+  background-size: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.hero4-img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.hero5 {
+  box-sizing: border-box;
+  height:99%;
+  width: 49.5%;
+  top: 1%;
+  right: 0%;
+  overflow: hidden;
+}
+
+.hero5-img {
+  height: 100%;
+  width: 100%;
+  background: url("../img/deadpool4-2.jpg") center;
+  background-size: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.hero5-img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.right-page-top {
+  position: absolute;
+  border: 1px solid #000;
+  height: 55%;
+  width: 96%;
+  top: 1.5%;
+  left: 2%;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.hero6 {
+  height: 98%;
+  width: 32%;
+  top: 1%;
+  left: 1%;
+  overflow: hidden;
+}
+
+.hero6-img {
+/*  position: relative;
+  -webkit-backface-visibility: hidden;*/
+  height: 100%;
+  width: 100%;
+  background: url("../img/hulk6-4.jpg") center;
+  background-size: cover;
+  transform: scale(1.4, 1.4);
+  transition: transform 0.3s ease-out;
+}
+
+.hero6-img:hover {
+  transform: scale(1, 1);
+}
+
+.hero7 {
+  height: 98%;
+  width: 32%;
+  top: 1%;
+  left: 34%;
+  overflow: hidden;
+}
+
+.hero7-img {
+/*  z-index: 10;*/
+  height: 100%;
+  width: 100%;
+  background: url("../img/thor-4.jpg") top;
+  background-size: cover;
+  transform: scale(1.5, 1.5) translateY(13%);
+  transition: transform 0.3s ease-out;
+}
+
+.hero7-img:hover {
+  transform: scale(1, 1);
+}
+
+.hero8 {
+  height: 98%;
+  width: 32%;
+  top: 1%;
+  right: 1%;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.hero8-img {
+/*  z-index: 10;*/
+  height: 100%;
+  width: 100%;
+  background: url("../img/wolverine3-2.jpg") top;
+  background-size: cover;
+  transform: scale(1.5, 1.5) translateY(10%);
+  transition: transform 0.3s ease-out;
+}
+
+.hero8-img:hover {
+  transform: scale(1, 1);
+}
+
+.hero9-frame{
+  position: absolute;
+  height: 36%;
+  width: 37%;
+  bottom: -1px;
+  left: -1px;
+  box-sizing: border-box;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #fff;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.hero9 {
+  height: 99%;
+  width:  100%;
+  top: 1%;
+  right: 1%;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.hero9-img {
+/*  z-index: 100;*/
+  background: url("../img/doctor-strange2.jpg") top;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  transform: scale(2, 2) translateY(20%);
+  transition: transform 0.3s ease-out;
+}
+
+.hero9-img:hover {
+  transform: scale(1, 1);
+}
+
+.comic-title-bottom-hero10{
+  transform: translate(0%, 0%);
+}
+
+.hero10 {
+/*  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;*/
+/*  border: 1px solid transparent;
+  position: relative;*/
+/*  box-sizing: border-box;*/
+/*  display: inline-block;*/
+/*  position: absolute;*/
+/*  -webkit-mask-image: #fff;
+  transform: translateZ(0);*/
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero10-img {
+/*   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;*/
+/*  box-sizing: border-box;*/
+/*  display: inline-block;*/
+/*  z-index: 100;*/
+  background: url("../img/captain-america3-3.jpg");
+  background-size: cover;
+  background-position: 70% 100%;
+  height: 100%;
+  width: 100%;
+  transform: scale(1, 1);
+  transition: transform 0.3s ease-out;
+}
+
+.hero10-img:hover {
+/*  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;*/
+  transform: scale(1.2, 1.2);
+}
+
+.no-hover {
+  z-index: 150;
+  height: 56.5%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.hero-title-zindex {
+  z-index: 150;
+}
+
+/********************
+Search-result
+**********************/
+.seach-results {
+  display: none;
+}
+
+.seach-results h3 {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+}
+
+.chosen-hero-top{
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.chosen-hero-top-left{
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.chosen-hero-top-right{
+  width: 40%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.hero-img-border {
+  border: 7px solid rgba(255,255,255, 1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+  transition:  box-shadow 0.3s ease;
+}
+
+.chosen-hero-img-jump:hover .hero-img-border {
+  box-shadow: 3px 3px 90px #000 inset;
+}
+
+.chosen-hero-img-jump {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+/*  filter: grayscale(40%);*/
+}
+
+/*.chosen-hero-img-jump:hover{
+  filter: grayscale(0%);
+}*/
+
+.hero-name {
+  font-size: 3rem;
+}
+
+.hero-name a{
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  display:block;
+  left: 0;
+  top:90%;
+  margin:0 auto;
+  height: 2px;
+  background-color: #a50021;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.hero-name a:hover .slider {
+    width: 100%;
+}
+
+.hero-description{
+  line-height: 1.5;
+}
+
+.comic-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.comic {
+  width: 200px;
+  margin: 5px;
+}
+
+.comic-title {
+  height: 19%;
+  box-sizing: border-box;
+  margin-top: 2%;
+
+}
+
+.img-jump {
+  display:block;
+  width:100%;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  height: 80%;
+}
+
+.img-jump:hover {
+  color: #d3002a;
+}
+
+
+.comic img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.comic a:hover img {
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+.abc {
+  background-color: #000;
+  z-index: 10;
+}
+
+.see-more-comic {
+  color: #fff;
+/*  background-color: #ed1a29;*/
+  font-size: 2rem;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 20px;
+  padding: 0 10px;
+/*  transition: box-shadow .2s ease;*/
+  position: relative;
+  border: 1px solid #ed1a29;
+  display: inline-block;
+}
+
+.see-more-comic:hover{
+  cursor: pointer;
+}
+
+.see-more-comic-span::before,
+.see-more-comic-span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  background-color: #ed1a29;
+  z-index: -1;
+  height: 50%;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+
+.see-more-comic-span:before {
+  top: 0;
+  transform-origin: right center;
+}
+
+.see-more-comic-span:after {
+  bottom: 0;
+  transform-origin: left center;
+}
+
+.see-more-comic:hover .see-more-comic-span::before,
+.see-more-comic:hover .see-more-comic-span::after {
+  transform: scale(1,1)
+}
+
+.see-more-comic:hover .see-more-comic-span::before {
+  transform-origin: right center;
+}
+
+.see-more-comic:hover .box-inside::after {
+  transform-origin: left center;
+}
+
+
+/*.see-more-comic::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform .4s ease;
+  z-index: -1;
+}*/
+
+/*.see-more-comic:hover::before{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  cursor: pointer;
+}*/
+
+/*.see-more-comic:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 12px #000;
+}*/
+
+footer{
+  margin-top: 1rem;
+}
+
+small a:hover {
+  color: #d3002a;
+}
+
+/**************
+Charactor Loading
+***************/
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 0, 0, 0, .7 )
+                url('../img/comics-loading2-2.gif')
+                50% 50%
+                no-repeat;
+    background-size: 100px;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+/**************
+Comics Loading
+***************/
+.comics-loading {
+  background: url('../img/comics-loading2-2.gif') center no-repeat;
+  background-size: 40px 40px;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+}
+
+
+/**************
+Media Query
+***************/
+
+@media only screen and (max-width: 840px) {
+ /* Jumbotron*/
+.jumbotron {
+  height: 1200px;
+}
+
+ .heroes {
+  flex-wrap: wrap;
+ }
+
+ .page {
+  height: 49%;
+  width: 97%;
+ }
+
+ .hero8{
+  word-wrap: break-word;
+  text-align: left;
+ }
+
+ /* Search-result*/
+  .hero-name {
+    margin: 1rem 0 0;
+  }
+
+  .hero-description {
+    margin: 0;
+  }
+
+  .chosen-hero-top {
+    flex-wrap: wrap;
+  }
+
+  .chosen-hero-top-left {
+    width: 100%;
+  }
+
+  .chosen-hero-top-right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .comic {
+    width: 100%;
+    margin: 0;
+  }
+
+  .img-jump {
+    height: auto;
+  }
+
+  .comic-title {
+    height: auto;
+    margin: 3% 0 11%;
+  }
+}
+
+
