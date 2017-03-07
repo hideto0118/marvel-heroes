@@ -24,6 +24,7 @@ small {
 a {
   text-decoration: none;
   color: currentColor;
+  outline:none;
 }
 
 ul {
@@ -101,7 +102,7 @@ Body
 
 .hero-in-comic {
   font-size: 1.5rem;
-/*  display: inline-block;*/
+  will-change: filter;
   border: 1px solid #000;
   position: absolute;
   box-sizing: border-box;
@@ -153,13 +154,13 @@ Body
 .hero1-img {
   width: 100%;
   height: 100%;
-  background: url("../img/spider-man4-3.jpg");
+  background: url("../img/spider-man.jpg");
   background-position: 20% 20%;
   background-size: cover;
   transition: transform 0.3s ease-out;
 }
 
-.hero1-img:hover {
+.hero1:hover .hero1-img {
   transform: scale(1.2, 1.2);
 }
 
@@ -187,15 +188,14 @@ Body
 }
 
 .hero2-img {
-/*  z-index: 100;*/
   height: 100%;
   width: 100%;
-  background: url("../img/iron-man2-2.jpg") center;
+  background: url("../img/iron-man.jpg") center;
   background-size: cover;
   transition: transform 0.3s ease-out;
 }
 
-.hero2-img:hover {
+.hero2:hover .hero2-img {
   transform: scale(1.5, 1.5);
 }
 
@@ -225,14 +225,14 @@ Body
 }
 
 .hero3-img {
-  background: url("../img/venom2-2.jpg") center;
+  background: url("../img/venom.jpg") center;
   background-size: cover;
   height: 100%;
   width: 100%;
   transition: transform 0.3s ease-out;
 }
 
-.hero3-img:hover {
+.hero3:hover .hero3-img {
   transform: scale(1.3, 1.3);
 }
 
@@ -258,12 +258,12 @@ Body
 .hero4-img {
   height: 100%;
   width: 100%;
-  background: url("../img/black-widow-2.jpg") center;
+  background: url("../img/black-widow.jpg") center;
   background-size: cover;
   transition: transform 0.3s ease-out;
 }
 
-.hero4-img:hover {
+.hero4:hover .hero4-img {
   transform: scale(1.5, 1.5);
 }
 
@@ -279,12 +279,12 @@ Body
 .hero5-img {
   height: 100%;
   width: 100%;
-  background: url("../img/deadpool4-2.jpg") center;
+  background: url("../img/deadpool.jpg") center;
   background-size: cover;
   transition: transform 0.3s ease-out;
 }
 
-.hero5-img:hover {
+.hero5:hover .hero5-img {
   transform: scale(1.5, 1.5);
 }
 
@@ -297,7 +297,7 @@ Body
   left: 2%;
   background-color: #fff;
   box-sizing: border-box;
-  z-index: 5;
+  z-index: 20;
 }
 
 .hero6 {
@@ -313,13 +313,13 @@ Body
   -webkit-backface-visibility: hidden;*/
   height: 100%;
   width: 100%;
-  background: url("../img/hulk6-4.jpg") center;
+  background: url("../img/hulk.jpg") center;
   background-size: cover;
   transform: scale(1.4, 1.4);
   transition: transform 0.3s ease-out;
 }
 
-.hero6-img:hover {
+.hero6:hover .hero6-img {
   transform: scale(1, 1);
 }
 
@@ -335,13 +335,13 @@ Body
 /*  z-index: 10;*/
   height: 100%;
   width: 100%;
-  background: url("../img/thor-4.jpg") top;
+  background: url("../img/thor.jpg") top;
   background-size: cover;
   transform: scale(1.5, 1.5) translateY(13%);
   transition: transform 0.3s ease-out;
 }
 
-.hero7-img:hover {
+.hero7:hover .hero7-img {
   transform: scale(1, 1);
 }
 
@@ -358,13 +358,13 @@ Body
 /*  z-index: 10;*/
   height: 100%;
   width: 100%;
-  background: url("../img/wolverine3-2.jpg") top;
+  background: url("../img/wolverine.jpg") top;
   background-size: cover;
   transform: scale(1.5, 1.5) translateY(10%);
   transition: transform 0.3s ease-out;
 }
 
-.hero8-img:hover {
+.hero8:hover .hero8-img {
   transform: scale(1, 1);
 }
 
@@ -394,7 +394,7 @@ Body
 
 .hero9-img {
 /*  z-index: 100;*/
-  background: url("../img/doctor-strange2.jpg") top;
+  background: url("../img/doctor-strange.jpg") top;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -402,7 +402,7 @@ Body
   transition: transform 0.3s ease-out;
 }
 
-.hero9-img:hover {
+.hero9:hover .hero9-img {
   transform: scale(1, 1);
 }
 
@@ -411,15 +411,6 @@ Body
 }
 
 .hero10 {
-/*  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;*/
-/*  border: 1px solid transparent;
-  position: relative;*/
-/*  box-sizing: border-box;*/
-/*  display: inline-block;*/
-/*  position: absolute;*/
-/*  -webkit-mask-image: #fff;
-  transform: translateZ(0);*/
   height: 100%;
   width: 100%;
   top: 0;
@@ -430,12 +421,7 @@ Body
 }
 
 .hero10-img {
-/*   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;*/
-/*  box-sizing: border-box;*/
-/*  display: inline-block;*/
-/*  z-index: 100;*/
-  background: url("../img/captain-america3-3.jpg");
+  background: url("../img/captain-america.jpg");
   background-size: cover;
   background-position: 70% 100%;
   height: 100%;
@@ -444,14 +430,12 @@ Body
   transition: transform 0.3s ease-out;
 }
 
-.hero10-img:hover {
-/*  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;*/
+.hero10:hover .hero10-img {
   transform: scale(1.2, 1.2);
 }
 
 .no-hover {
-  z-index: 150;
+  z-index: 10;
   height: 56.5%;
   width: 100%;
   position: absolute;
@@ -510,12 +494,7 @@ Search-result
   width: 100%;
   height: 100%;
   position: relative;
-/*  filter: grayscale(40%);*/
 }
-
-/*.chosen-hero-img-jump:hover{
-  filter: grayscale(0%);
-}*/
 
 .hero-name {
   font-size: 3rem;
@@ -599,13 +578,11 @@ Search-result
 
 .see-more-comic {
   color: #fff;
-/*  background-color: #ed1a29;*/
   font-size: 2rem;
   display: inline-block;
   vertical-align: bottom;
   margin-bottom: 20px;
   padding: 0 10px;
-/*  transition: box-shadow .2s ease;*/
   position: relative;
   border: 1px solid #ed1a29;
   display: inline-block;
@@ -652,33 +629,6 @@ Search-result
   transform-origin: left center;
 }
 
-
-/*.see-more-comic::after{
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: #000;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: transform .4s ease;
-  z-index: -1;
-}*/
-
-/*.see-more-comic:hover::before{
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  cursor: pointer;
-}*/
-
-/*.see-more-comic:hover {
-  cursor: pointer;
-  box-shadow: inset 0 0 12px #000;
-}*/
-
 footer{
   margin-top: 1rem;
 }
@@ -704,7 +654,7 @@ Charactor Loading
     height:     100%;
     width:      100%;
     background: rgba( 0, 0, 0, .7 )
-                url('../img/comics-loading2-2.gif')
+                url('../img/loading.gif')
                 50% 50%
                 no-repeat;
     background-size: 100px;
@@ -726,7 +676,7 @@ body.loading .modal {
 Comics Loading
 ***************/
 .comics-loading {
-  background: url('../img/comics-loading2-2.gif') center no-repeat;
+  background: url('../img/loading.gif') center no-repeat;
   background-size: 40px 40px;
   margin: 0 auto;
   height: 50px;
